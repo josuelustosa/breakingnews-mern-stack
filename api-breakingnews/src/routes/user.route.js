@@ -1,6 +1,6 @@
 const route = require("express").Router();
 const userContoller = require("../controllers/user.controller");
 
-route.get("/", userContoller.soma);
+route.post("/", userContoller.create);
 
 module.exports = route;
